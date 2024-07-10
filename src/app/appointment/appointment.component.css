@@ -1,0 +1,130 @@
+.container-fluid {
+  padding: 20px;
+  background-color: #fff;
+  width: 188%;
+}
+
+header {
+  border-radius: 7px;
+  border: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.appointments {
+  margin-top: 5px;
+}
+
+.appointment-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  background-color: #fff;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.doctor-info {
+  color: #288ead;
+  font-size: small;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.doctor-info img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.appointment-actions {
+  text-align: center;
+}
+
+h2 {
+  font-size: 18px;
+  color: #288ead;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 12px;
+  color: #288ead;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.btn {
+  display: inline-block;
+  transition-duration: 0.4s;
+  padding: 15px 32px;
+  text-align: center;
+  margin: 4px 2px;
+  font-size: 12px;
+  color: #fff;
+  background-color: #288ead;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #c0736e;
+}
+
+.book-appointment {
+  background-color: #288ead;
+}
+
+@media (max-width: 768px) {
+  .appointment-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .doctor-info {
+    margin-bottom: 10px;
+  }
+
+  .appointment-actions {
+    width: 100%;
+    text-align: left;
+  }
+}
+
+header .specialist-dropdown {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  border: none;
+}
+
+header .specialist-label {
+  margin-right: 10px;
+  font-size: 13px;
+  color: #288ead;
+  font-weight: bold;
+}
+
+header .dropdown-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+header .form-select {
+  width: 40%;
+  padding: 10px;
+  font-size: 12px;
+  color: #288ead;
+  
+}

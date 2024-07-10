@@ -1,0 +1,100 @@
+
+.container {
+  padding: 20px;
+  width: 118%;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  color: #288ead;
+}
+
+.btn-primary {
+  background-color: #288ead;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Controls section */
+.controls {
+  color: #288ead;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.controls select, .controls input {
+  color: #288ead;
+  margin-left: 8px;
+  margin-right: 8px;
+  padding: 6px;
+  border: 1px solid #dddddd; /* Add border color */
+  border-radius: 25px; /* Add border radius */
+  background-color: white; /* Ensure background is white */
+}
+
+table {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+  
+}
+
+th {
+  background-color: #b2e6f7;
+}
+
+
+button.active {
+  background-color: #288ead;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+button.inactive {
+  background-color: #b5636b;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.search-box {
+  position: relative;
+  width: 20%;
+}
+
+.search-box input {
+  width: 110%;
+  padding: 10px 20px 10px 40px;
+  border: 1px solid #dddddd;
+  border-radius: 25px;
+  font-size: 16px;
+}
+
+.search-box .search-icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #aaaaaa;
+}
+
+
+table tr:hover {
+  background-color: #e0f7fa;
+  
+}

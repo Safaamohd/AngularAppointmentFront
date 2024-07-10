@@ -1,0 +1,64 @@
+.container {
+    width: 150%;
+    margin: 0 auto;
+  }
+  .btn-add-patient {
+    margin-bottom: 10px;
+    background-color: #78d0ed;
+    color: white;
+    padding: 10px;
+    border: 1px solid #288ead;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+  
+  .table-controls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  
+  table {
+    width: 100%;
+    /* border-collapse: collapse; */
+  }
+  
+  th, td {
+    font-family:'Times New Roman', Times, serif;
+    /* border: 1px solid #288ead; */
+    text-align: left;
+    padding: 8px;
+  }
+  
+  th {
+    background-color: #b2e6f7;
+  }
+  table tr:hover {
+    background-color: #e0f7fa;
+    
+  }
+  .search-box {
+  position: relative;
+  width: 18%;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 10px 20px 10px 40px;
+  border: 1px solid #dddddd;
+  border-radius: 25px;
+  font-size: 16px;
+}
+
+.search-box .search-icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #aaaaaa;
+}
+
+  
+  

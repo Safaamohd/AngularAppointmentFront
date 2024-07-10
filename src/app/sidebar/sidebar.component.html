@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+<nav>
+  <div class="sidebar-container">
+    <div class="sidebar close">
+      <div class="toggle-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+      <br>
+      <ul>
+        <li><a (click)="onLinkClick('/dashboard')"><i class="fas fa-tachometer-alt"></i>  Dashboard</a></li>
+        <li><a (click)="onLinkClick('/appointment')"><i class="fas fa-calendar-alt"></i>  Appointment</a></li>
+        <li><a (click)="onLinkClick('/doctor')"><i class="fas fa-user-md"></i>  Doctor</a></li>
+        <li><a (click)="onLinkClick('/patient')"><i class="fas fa-procedures"></i> Patient</a></li>
+        <li><a (click)="onLinkClick('/department')"><i class="fas fa-building"></i>   Department</a></li>
+        <li><a (click)="onLinkClick('/setting')"><i class="fas fa-cog"></i>   Setting</a></li>
+        <br>
+        <br>
+        
+        <li><a (click)="onLinkClick('/signup')"><i class="fas fa-sign-out-alt"></i> Sign out </a></li>
+      </ul>
+    </div>
+
+    <div class="main-content">
+     
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</nav>

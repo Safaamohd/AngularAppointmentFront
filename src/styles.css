@@ -1,0 +1,56 @@
+/* You can add global styles to this file, and also import other style files */
+@import "bootstrap/dist/css/bootstrap.css";
+@import "bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css";
+
+@import 'bootstrap-datepicker/dist/css/bootstrap-datepicker.css';
+/* @import 'bootstrap-datepicker/dist/js/bootstrap-datepicker.js' */
+/* src/styles.css */
+
+/* Default styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Light mode styles */
+  body.light-mode {
+    background-color: #ffffff;
+    color: #0c0c0cda;
+  }
+  
+  /* Dark mode styles */
+  body.dark-mode {
+    background-color: #0c0c0cda;
+    color: #ffffff;
+  }
+  
+  /* Additional styles to ensure other elements follow the theme */
+  form,
+  input,
+  select,
+  button {
+    background-color: inherit;
+    color: inherit;
+  }
+  
+  button[type="submit"] {
+    border: 1px solid currentColor;
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  /* Ensure the forms adapt to the theme */
+  .contact-info-container {
+    padding: 20px;
+  }
+  
+  .contact-info-container .contact-details,
+  .contact-info-container .contact-form {
+    margin-bottom: 20px;
+  }
+  

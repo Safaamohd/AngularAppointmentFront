@@ -1,0 +1,60 @@
+<div class="container-fluid mt-15">
+  <div class="col-12 d-flex justify-content-between align-items-center">
+    <h2>Welcome</h2>
+  </div>
+  <header>
+    <div class="col-12">
+      <div class="specialist-dropdown">
+        <label for="specialist" class="specialist-label">Specialist:</label>
+        <div class="dropdown-wrapper">
+          <select id="specialist" class="form-select" (change)="onSpecialistChange($event)">
+            <option *ngFor="let department of departments" [value]="department.departmentName">{{ department.departmentName }}</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </header>
+  <br>
+  <div class="appointments">
+    <div *ngFor="let doctor of filteredDoctors; let i = index" class="appointment-card">
+      <div class="doctor-info">
+        <img [src]="doctor.imageUrl" [alt]="doctor.doctorName">
+        <div>
+          <h2>{{ doctor.doctorName }}</h2>
+          <p>{{ doctor.department.departmentName }} - {{ doctor.experience }} Years of Experience</p>
+          <p>Location: {{ doctor.location }}</p>
+          <p>{{ doctor.doctorEmail }}</p>
+          <p>{{ doctor.doctorMobileNo }}</p>
+          <p>Rating: {{ doctor.rating }} <span>★</span></p>
+        </div>
+      </div>
+      <div class="appointment-actions">
+        <button type="button" class="btn btn-primary" [attr.data-bs-target]="'#exampleModal' + i" data-bs-toggle="modal">
+          Book Appointment
+        </button>
+        <div class="modal fade" [id]="'exampleModal' + i" tabindex="-1" [attr.aria-labelledby]="'exampleModalLabel' + i" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" [id]="'exampleModalLabel' + i">Appointment</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                Are you sure you want to book an appointment with {{ doctor.doctorName }}?
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary" (click)="bookAppointment(doctor.id)">Submit</button>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <br><br>
+        <p>{{ doctor.schedule }}</p>
+        <p>Cost: {{ doctor.cost }}</p>
+      </div>
+    </div>
+  </div>
+</div>

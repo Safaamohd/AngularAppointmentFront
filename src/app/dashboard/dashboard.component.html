@@ -1,0 +1,81 @@
+<div class="row safaa-container">
+
+  <div class="appointments-booked-section">
+    <h2>Appointments Overview</h2>
+    <br>
+    <div class="appointments-booked">
+      <div class="appointments-booked-item">
+        <div class="appointments-booked-icon">
+          <i class="fas fa-users"></i>
+        </div>
+        <div class="appointments-booked-label">All</div>
+        <div class="appointments-booked-value">130</div>
+      </div>
+      <div class="appointments-booked-item">
+        <div class="appointments-booked-icon">
+          <i class="fas fa-solid fa-address-book"></i>
+        </div>
+        <div class="appointments-booked-label">New</div>
+        <div class="appointments-booked-value">160</div>
+      </div>
+      <div class="appointments-booked-item">
+        <div class="appointments-booked-icon">
+          <i class="fas fa-phone"></i>
+        </div>
+        <div class="appointments-booked-label">Cancelled</div>
+        <div class="appointments-booked-value">12</div>
+      </div>
+      <div class="appointments-booked-item">
+        <div class="appointments-booked-icon">
+          <i class="fas fa-calendar-alt"></i>
+        </div>
+        <div class="appointments-booked-label">Today</div>
+        <div class="appointments-booked-value">12</div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="row mt-4">
+    <div class="col-8"> 
+      <div class="overview-section">
+        <h2>Appointments </h2>
+        <br>
+        <div class="overview-details">
+          <div class="overview-item">
+            <div class="overview-item-value">1206</div>
+            <div class="overview-item-label">All</div>
+          </div>
+          <div class="overview-item">
+            <div class="overview-item-value">2455</div>
+            <div class="overview-item-label">New</div>
+          </div>
+          <div class="overview-item">
+            <div class="overview-item-value">12</div>
+            <div class="overview-item-label">Today</div>
+          </div>
+          <div class="overview-item">
+            <div class="overview-item-value">28</div>
+            <div class="overview-item-label">Cancelled</div>
+          </div>
+        </div>
+        <div class="appointments-chart">
+          <canvas id="appointmentsChart"></canvas>
+        </div>
+      </div>
+    </div><!--End of appointement-->
+    <div class="col-4">
+      <div class="calendar-section">
+        <h2>Calendar</h2>
+          <ngb-datepicker #dp [(ngModel)]="model" (navigate)="date = $event.next"></ngb-datepicker>
+          <hr />
+
+          <button class="btn btn-sm btn-outline-primary me-2" (click)="model = today">Select Today</button>
+          <button class="btn btn-sm btn-outline-primary me-2" (click)="dp.navigateTo()">Current Month</button>
+          <hr />
+
+      </div>
+    </div>
+
+  </div>
+ 
+</div> <!--End of safaaContainer-->

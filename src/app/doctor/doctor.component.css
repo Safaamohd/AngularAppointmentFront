@@ -1,0 +1,89 @@
+
+.container {  
+    width: 1000px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 5px;
+  }
+  
+  .appointments {
+    width: 1020px;
+    margin-top: 5px;
+  }
+  
+  .appointment-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    background-color: #fff;
+  }
+  
+  .doctor-info {
+    color: #288ead;
+    font-size: small;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .doctor-info img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .appointment-actions {
+    text-align: center;
+  }
+  .container h2 {
+    font-size: 18px; 
+    color: #288ead; 
+    font-weight: bold; 
+    margin-bottom: 10px;
+  }
+  .container p {
+    font-size: 12px; 
+    color: #288ead; 
+    font-weight: bold; 
+    margin-bottom: 10px;
+  }
+  
+  .search-box {
+    position: relative;
+    width: 20%;
+  }
+  
+  .search-box input {
+    width: 100%;
+    padding: 10px 20px 10px 40px;
+    border: 1px solid #dddddd;
+    border-radius: 25px;
+    font-size: 16px;
+  }
+  
+  .search-box .search-icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #aaaaaa;
+  }
+  
+  
+  
+  
+  
+  

@@ -1,0 +1,42 @@
+<div class="container">
+  <br>
+  <br>
+  <div class="table-controls">
+    <label for="records-per-page">Display 
+      <select id="records-per-page" [(ngModel)]="recordsPerPage" (change)="onRecordsPerPageChange()">
+        <option *ngFor="let option of [2, 3, 4, 5, 10, 15, 20, 25, 30, 35]" [value]="option">{{ option }}</option>
+      </select> records per page
+    </label>
+    <br>
+    <br>
+    <div class="search-box">
+      <span class="search-icon"><i class="fas fa-search"></i></span>
+      <input type="text" placeholder="Search.." [(ngModel)]="searchQuery" (input)="onSearchQueryChange()" />
+    </div>
+  </div>
+  <br>
+  <table>
+    <thead>
+      <tr>
+        <th>Serial No</th>
+        <th>Doctor Name</th>
+        <th>Email</th>
+        <th>Mobile No</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let doctor of filteredDoctors; let i = index">
+        <td>{{ i + 1 }}</td>
+        <td>{{ doctor.doctorName }}</td>
+        <td>{{ doctor.doctorEmail }}</td>
+        <td>{{ doctor.doctorMobileNo }}</td>
+        <td>
+          <button class="delete-button" (click)="deleteDoctor(doctor)">
+            <i class="fas fa-trash-alt"></i>
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

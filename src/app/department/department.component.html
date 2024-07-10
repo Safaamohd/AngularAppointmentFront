@@ -1,0 +1,40 @@
+<div class="container">
+  <div class="form-container">
+    <div class="header">
+      <h1>Department</h1>
+    </div>
+    <div class="controls">
+      <label for="recordsPerPage">Display</label>
+      <select id="recordsPerPage" [(ngModel)]="recordsPerPage" (change)="onRecordsPerPageChange($event)">
+        <option *ngFor="let option of recordsPerPageOptions" [value]="option">{{ option }}</option>
+      </select>
+      <span>records per page</span>
+      <div class="search-box">
+        <input type="text" placeholder="search.." [(ngModel)]="searchTerm" (input)="onSearch()" />
+        <span class="search-icon"><i class="fas fa-search"></i></span>
+      </div>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Serial No</th>
+          <th>Department Name</th>
+          <th>Description</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let department of filteredDepartments; let i = index">
+          <td>{{ (currentPage - 1) * recordsPerPage + i + 1 }}</td>
+          <td>{{ department.departmentName }}</td>
+          <td>{{ department.description }}</td>
+          <td>
+            <button [ngClass]="{'active': department.status === 'Active', 'inactive': department.status === 'Inactive'}">
+              {{ department.status }}
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
