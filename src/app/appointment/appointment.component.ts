@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { AuthenticationService } from '../authentication.service';
+import { AuthenticationService } from '../authentication.service'
 
 export interface Appointment {
   appointmentId: number;
@@ -120,11 +120,7 @@ export class AppointmentComponent implements OnInit {
     this.authService.addPatientAppointment(appointmentRequest).subscribe(
       () => {
         console.log('Appointment booked successfully!');
-        alert('Please review your appointment in patient page');
       },
-      (error: any) => {
-        console.error('Error booking appointment:', error);
-      }
     );
   }
 }

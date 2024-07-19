@@ -8,10 +8,6 @@ import { Component, Output, EventEmitter } from '@angular/core';
 export class SidebarComponent {
   @Output() linkClicked = new EventEmitter<string>();
 
-  toggleSidebar() {
-   
-  }
-
   onLinkClick(route: string) {
     this.linkClicked.emit(route);
   }

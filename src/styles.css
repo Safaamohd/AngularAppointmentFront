@@ -3,28 +3,22 @@
 @import "bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css";
 
 @import 'bootstrap-datepicker/dist/css/bootstrap-datepicker.css';
-/* @import 'bootstrap-datepicker/dist/js/bootstrap-datepicker.js' */
-/* src/styles.css */
 
-/* Default styles */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
   }
-  
-  /* Light mode styles */
+
   body.light-mode {
     background-color: #ffffff;
     color: #0c0c0cda;
   }
   
-  /* Dark mode styles */
   body.dark-mode {
     background-color: #0c0c0cda;
     color: #ffffff;
   }
   
-  /* Additional styles to ensure other elements follow the theme */
   form,
   input,
   select,
@@ -44,7 +38,7 @@ body {
     cursor: not-allowed;
   }
   
-  /* Ensure the forms adapt to the theme */
+  
   .contact-info-container {
     padding: 20px;
   }

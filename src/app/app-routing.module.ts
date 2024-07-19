@@ -10,9 +10,8 @@ import { PatientComponent } from './patient/patient.component';
 import { DepartmentComponent } from './department/department.component';
 import { MainLayoutComponent } from './main-layout/main-layout.component';
 import { AuthLayoutComponent } from './auth-layout/auth-layout.component';
-import { AppointmentComponent } from './appointment/appointment.component';
-import { SingUpDoctorComponent } from './sing-up-doctor/sing-up-doctor.component';
-import { PatientAppointmentComponent } from './patient-appointment/patient-appointment.component'
+import { AppointmentComponent } from './appointment/appointment.component'
+
 
 
 const routes: Routes = [
@@ -23,8 +22,6 @@ const routes: Routes = [
       { path: '', component: HomeComponent },
       { path: 'create-account', component: CreateAccountComponent },
       { path: 'signup', component: SignupComponent },
-      { path: 'sign-up-doctor', component: SingUpDoctorComponent},
-      { path: 'patient-appointmet', component: PatientAppointmentComponent}
       
     ]
   },

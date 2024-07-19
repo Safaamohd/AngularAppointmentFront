@@ -20,8 +20,6 @@ import { NgbDatepickerModule } from '@ng-bootstrap/ng-bootstrap';
 import { HttpClientModule } from '@angular/common/http';
 import { AuthenticationService } from './authentication.service';
 import { PatientComponent }  from './patient/patient.component';
-import { PatientAppointmentComponent } from './patient-appointment/patient-appointment.component';
-import { SingUpDoctorComponent } from './sing-up-doctor/sing-up-doctor.component'
 
 
 
@@ -39,11 +37,7 @@ import { SingUpDoctorComponent } from './sing-up-doctor/sing-up-doctor.component
     PatientComponent,
     DepartmentComponent,
     AuthLayoutComponent,
-    MainLayoutComponent,
-    PatientAppointmentComponent,
-    SingUpDoctorComponent
-    
-  
+    MainLayoutComponent  
   ],
   imports: [
     ReactiveFormsModule,
